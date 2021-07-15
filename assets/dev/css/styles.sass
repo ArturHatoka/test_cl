@@ -1,49 +1,114 @@
-//@import "variables"
-body
-    display: flex
-    background: #fff
+@import "variables"
 
-////@import "~swiper/swiper"
-//@import "fonts"
-//@import "../node_modules/swiper/swiper"
-//
-//*, :before, :after
-//  box-sizing: border-box
-//
-//button
-//  padding: 0
-//  &:hover
-//    cursor: pointer
-//
-//ul, li
-//  padding: 0
-//  margin: 0
-//
-//h1,h2,h3,h4
-//  margin: 0
-//  margin-bottom: .5rem
-//  line-height: 1.2
-//  font-weight: 500
-//
-//a
-//  text-decoration: none
-//  &:hover
-//    text-decoration: underline
-//    cursor: pointer
-//
-//@import "components/swiper"
-//@import "components/btn"
-//@import "components/logo"
-//@import "components/menu"
-//@import "components/dash"
-//
-//body
-//  display: flex
-//  position: relative
-//  height: 100vh
-//  color: $sub-color
-//
-//
-//@import "blocks/header"
-//@import "blocks/main"
-//@import "blocks/footer"
+*, :before, :after
+  box-sizing: border-box
+
+button
+  padding: 0
+  &:hover
+    cursor: pointer
+
+ul, li
+  padding: 0
+  margin: 0
+
+h1,h2,h3,h4
+  margin: 0 0 .5rem
+  line-height: 1.2
+  font-weight: 500
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+    cursor: pointer
+
+header, footer
+  margin: 10px 0
+
+body
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  position: relative
+  margin: 0
+  padding: 0
+  min-height: 97vh
+  background: $bg-color
+  font-family: $roboto
+  color: $main-color
+  font-size: 15px
+
+.container
+  width: 100%
+  max-width: 1120px
+  padding: 0 30px
+
+.wrapper
+  display: flex
+  align-items: center
+  justify-content: space-around
+  flex-wrap: wrap
+
+.item
+  display: flex
+  flex-direction: column
+  max-width: 300px
+  margin: 20px 15px
+  box-shadow: $light-color  0 0 5px 2px
+  border-radius: 5px
+
+  &__top
+    display: flex
+    align-items: center
+    justify-content: center
+
+    & img
+      max-width: 100%
+
+  &__body
+    display: flex
+    flex-direction: column
+    padding: 30px 25px
+
+  &__title
+    font-size: 20px
+    font-weight: bold
+    padding-bottom: 7px
+
+  &__desc
+    color: $sub-color
+
+  &__bot
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding: 0 25px 30px
+
+  &__price
+    display: flex
+    align-items: baseline
+
+    &--num
+      font-size: 35px
+      font-weight: bold
+      padding-right: 3px
+
+    &--text
+      font-size: 20px
+
+  &__cart
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 50px
+    height: 40px
+    background: $btn-color
+    border: 0 none
+    border-radius: 3px
+
+    svg
+      width: 25px
+      height: 20px
+      fill: #fff
